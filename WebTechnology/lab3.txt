@@ -1,8 +1,0 @@
-<html>
-<head>
-<title>LAB-3</title>
-<body>
-<img src = "pp.png">
-</body>
-</head>
-</html>
