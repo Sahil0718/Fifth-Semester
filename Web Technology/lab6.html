@@ -15,36 +15,80 @@
             height: 150px;
             width: 150px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
 
         .photo {
-            margin: 0px auto;
             width: 20%;
-            height: 25%;
+            margin: 0 auto;
             background-color: lightblue;
             padding: 10px;
             border: 2px solid whitesmoke;
-            margin-right: auto;
-            margin-right: auto;
             border-radius: 10px;
             box-shadow: 0px 0px 20px 1.5px lightblue;
-
         }
 
         #contactlist {
             font-family: 'Arial';
+        }
+
+        .form {
+            padding: 10px;
+            width: 20%;
+            margin-top: -25%;
+            margin-left: 14%;
+            background-color: #ADA8B6;
+            border-radius: 10px;
+            border: 2px solid #23022E;
+            box-shadow: 0px 0px 20px 1.5px grey;
 
         }
-        .form{
-            
+
+        .submit {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .submit button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .submit button:hover {
+            background-color: #21825C;
+        }
+
+
+        table {
+            width: 25%;
+            margin: 20px 150px 20px;
+            border-collapse: collapse;
+            float: right;
+            margin-top: -15%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightgray;
         }
     </style>
 </head>
 
 <body>
-    <div class=photo>
+    <div class="photo">
         <h1 id="firstheader">My Personal Info</h1>
         <img src="pp.png" alt="Profile Picture" id="pp">
         <ul id="contactlist">
@@ -60,14 +104,50 @@
 
     <div class="form">
         <form>
-            <h2>Login Form:</h2>
-            <label="Username">Username:</label>
+            <caption><b><i>A SIMPLE LOGIN FORM</i></b></caption>
+            <h2 style="color: whitesmoke;"><u>Login Form:</u></h2>
+            <label for="username" style="font-family: Verdana">Username:</label>
             <input type="text" id="username" name="username"><br><br>
-            <label="Password">Password:</label>
-            <input type="password" id="password" name="password"><br>
-            <input type = "submit" value = "Submit">
+            <label for="password" style="font-family: Verdana">Password:&nbsp;</label>
+            <input type="password" id="password" name="password"><br><br>
+            <div class="submit">
+                <button type="button">Submit</button>
+            </div>
         </form>
     </div>
+
+    <table>
+        <caption><b><i>TABLE FOR MY FIRENDS NAME:</i></b></caption>
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>Names</th>
+                <th>Addresses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Niraj</td>
+                <td>Thamel</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Aayan</td>
+                <td>Gyaneshwor</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Yunika</td>
+                <td>Manmaiju</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Abhijit</td>
+                <td>Radhe Mandir</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
