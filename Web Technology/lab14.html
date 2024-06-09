@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Celsius to Fahrenheit Converter</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #celsiusInput {
+            padding: 3px;
+            background-color: lightblue;
+            border: 4px;
+            border-radius: 5px;
+        }
+
+        .heading {
+            font-family: 'Georgia';
+            font-size: medium;
+            font-style: italic;
+        }
+
+        button {
+            padding: 3px;
+            background-color: lightgreen;
+            border: 1px;
+            border-radius: 5px;
+            font-family: 'Rajdhani';
+            font-weight: bold;
+        }
+
+        .maincontent {
+            padding: 14px;
+            background-color: beige;
+            display: inline-block;
+            border: 2px;
+            border-radius: 5px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontent">
+        <div class="heading">
+            <label for="celsiusInput">Enter Celsius Temperature:</label><br>
+        </div>
+        <input type="number" id="celsiusInput" name="celsiusInput">
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
