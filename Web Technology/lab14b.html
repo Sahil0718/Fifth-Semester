@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Using JavaScript</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NO:wght@100..400&display=swap');
+
+        #main,
+        #secondmain,
+        #thirdmain,
+        #fourthmain {
+
+            border: 1px solid whitesmoke;
+            border-radius: 2px;
+            background-color: bisque;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            width: 50%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-family: 'Playwrite NO';
+            margin-top: 1rem;
+        }
+
+        #header {
+            text-align: center;
+            font-family: 'Montserrat';
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header"> Assignment Operator</h1>
+    <div id="main"></div>
+    <div id="secondmain"></div>
+    <div id="thirdmain"></div>
+    <div id="fourthmain"></div>
+    <script>
+        let a = 10;
+        let b = 20;
+
+        let c = a;
+        document.getElementById("main").innerHTML = "Value of c after assignment: " + c;
+
+        a += b;
+        document.getElementById("secondmain").innerHTML = "Value of a after assignment: " + a;
+        a -= b;
+        document.getElementById("thirdmain").innerHTML = "Value of a after subtraction: " + a;
+
+        let y = 50;
+        y /= 5;
+        document.getElementById("fourthmain").innerHTML = "Value of x after division assignment: " + y;
+    </script>
+</body>
+
+</html>
